@@ -14,4 +14,11 @@ Vagrant.configure("2") do |config|
 # config.vm.synced_folder "." "/vagrant", disabled: true
   end
  end
+
+  # Run Ansible from the Vagrant Host
+  #
+  config.vm.provision "ansible" do |ansible|
+    ansible.playbook = "../ansible/app.yml"
+  end
+
 end
