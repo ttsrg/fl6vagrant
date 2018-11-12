@@ -1,0 +1,4 @@
+---
+- name: Install mc
+  apt: name=mc state=present
+

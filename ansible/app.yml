@@ -1,0 +1,6 @@
+---
+- hosts: all   # vagrant
+
+
+  roles: 
+   - mc
